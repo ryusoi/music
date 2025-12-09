@@ -1,0 +1,18 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #111;
+}
+body {
+  font-family: 'Google Sans', sans-serif;
+  font-size: 14px;
+  /* Allow scrolling for the larger UI */
+  overflow: auto; 
+}
+body.dragging {
+  cursor: ns-resize;
+}
+body.dragging * {
+  user-select: none;
+  pointer-events: none;
+}
